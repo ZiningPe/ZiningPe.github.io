@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wang Zining | PhD Researcher @ HKUST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">王子宁 · Zining</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <div class="photo-ring2"></div>
+        <div class="photo-ring"></div>
+        <img src="assets/photo.jpg" alt="Wang Zining" class="hero-photo" id="hero-photo" />
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Wang Zining</h1>
+        <div class="hero-roles">
+          <span class="role-prefix">PhD Researcher in</span>
+          <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-affil">
+          <span class="dot teal"></span>Division of Public Policy, HKUST
+        </p>
+        <p class="hero-tagline">
+          Bridging <em>Spatial Econometrics</em>, <em>Urban AI</em> &amp; <em>Environmental Policy</em>
+        </p>
+        <div class="hero-badges">
+          <span class="badge">🏙️ Urban Planning</span>
+          <span class="badge">📊 Spatial Analysis</span>
+          <span class="badge">🌿 Environmental Econ</span>
+          <span class="badge">🤖 Deep Learning</span>
+        </div>
+        <div class="hero-actions">
+          <a href="assets/CV_WangZining.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+          <a href="#publications" class="btn btn-ghost">View Publications</a>
+        </div>
+        <div class="hero-links">
+          <a href="mailto:zwangpe@connect.ust.hk" title="Email" class="icon-link">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          <a href="https://github.com/ZiningPe" title="GitHub" class="icon-link" id="github-link" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://scholar.google.com" title="Google Scholar" class="icon-link" id="scholar-link" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="scroll down">
+      <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5"/></svg>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I am a first-year PhD student at the <strong>Division of Public Policy, HKUST</strong>,
+            investigating the intersection of <strong>Deep Learning</strong>, <strong>Large Language Models</strong>,
+            and <strong>3D Visualization</strong> to tackle complex urban planning challenges and facilitate
+            Evidence-based Planning.
+          </p>
+          <p>
+            My research sits at the crossroads of <em>spatial econometrics</em>, <em>environmental economics</em>,
+            and <em>urban science</em>. I am particularly interested in how novel data sources and machine learning
+            methods can unlock new insights into city dynamics, green investment, and sustainable development.
+          </p>
+          <p>
+            Previously, I completed my Master's degree at <strong>Kyushu University</strong> (Japan) on a
+            Monbukagakusho (JASSO) Honors Scholarship, where I developed rigorous quantitative methods
+            for environmental and regional economics.
+          </p>
+          <div class="stat-row">
+            <div class="stat">
+              <span class="stat-num">7</span>
+              <span class="stat-label">Peer-reviewed<br/>Publications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">7</span>
+              <span class="stat-label">Papers Under<br/>Review</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">4</span>
+              <span class="stat-label">International<br/>Conferences</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Countries<br/>Studied In</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-interests reveal">
+          <h3>Research Interests</h3>
+          <ul class="interest-list">
+            <li>
+              <span class="int-icon">🌏</span>
+              <div>
+                <strong>Spatial Econometrics &amp; Urban Analytics</strong>
+                <p>Dynamic spatial-temporal weight matrices; functional agglomeration; urban centers detection</p>
+              </div>
+            </li>
+            <li>
+              <span class="int-icon">🌱</span>
+              <div>
+                <strong>Environmental &amp; Green Economy</strong>
+                <p>Low-carbon city pilots; green investment; eco-product trade; CO₂ emissions; EKC framework</p>
+              </div>
+            </li>
+            <li>
+              <span class="int-icon">🤖</span>
+              <div>
+                <strong>AI for Urban Planning</strong>
+                <p>Deep learning, LLMs, 3D visualization applied to evidence-based planning decisions</p>
+              </div>
+            </li>
+            <li>
+              <span class="int-icon">🚇</span>
+              <div>
+                <strong>Transportation &amp; Equity</strong>
+                <p>Transit funding; transport equity; HSR urban impacts; 15-minute city accessibility</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3>Hong Kong University of Science and Technology</h3>
+                <p class="tl-sub">PhD Program · Division of Public Policy</p>
+              </div>
+              <span class="tl-date">Oct 2025 – Present</span>
+            </div>
+            <p class="tl-body">
+              Investigating the intersection of Deep Learning, LLMs, and 3D Visualization to tackle
+              complex urban planning challenges and facilitate Evidence-based Planning.
+            </p>
+            <div class="tl-tags">
+              <span>Urban AI</span><span>Deep Learning</span><span>LLMs</span><span>3D Visualization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3>Kyushu University</h3>
+                <p class="tl-sub">Master's Degree · International Program in Public Economics</p>
+              </div>
+              <span class="tl-date">Oct 2023 – Aug 2025</span>
+            </div>
+            <p class="tl-body">
+              GPA: 3.53 / 4.0 &nbsp;·&nbsp;
+              <strong>Monbukagakusho Honors Scholarship (JASSO)</strong> recipient.
+              Coursework: Econometrics, Economic Theory, Information Analysis, Asian Economic Research.
+            </p>
+            <div class="tl-tags">
+              <span>Public Economics</span><span>JASSO Scholarship</span><span>Japan</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESEARCH / SELECTED PUBLICATIONS ========== -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Publications</h2>
+      <div class="pub-filter reveal">
+        <button class="pub-btn active" data-filter="all">All</button>
+        <button class="pub-btn" data-filter="published">Published</button>
+        <button class="pub-btn" data-filter="review">Under Review</button>
+      </div>
+
+      <div class="pub-list" id="pub-list">
+
+        <!-- ---- PUBLISHED ---- -->
+        <div class="pub-card reveal" data-category="published">
+          <span class="pub-year">2026</span>
+          <div class="pub-body">
+            <h4>How does China's Low-Carbon City Pilot Program Promote Green Investment? A Spatial–Temporal Analysis at the City and Firm Levels</h4>
+            <p class="pub-authors"><strong>Wang Zining</strong>, Pengyu Zhu, Bing He</p>
+            <p class="pub-journal"><em>Humanities and Social Sciences Communications</em> · In Press</p>
+            <div class="pub-tags"><span>Green Investment</span><span>Spatial-Temporal</span><span>Low-Carbon Policy</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal" data-category="published">
+          <span class="pub-year">2026</span>
+          <div class="pub-body">
+            <h4>China's Model of Technology Leapfrog: A Case Study of Electric Vehicle Policies and the Development of Green Technology</h4>
+            <p class="pub-authors">Zhu Pengyu, <strong>Zining Wang</strong>, Renu Singh, Xinying Tan</p>
+            <p class="pub-journal"><em>Renewable and Sustainable Energy Reviews</em> · 226, Part D: 116414</p>
+            <div class="pub-tags"><span>EV Policy</span><span>Green Technology</span><span>China</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal" data-category="published">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <h4>Trade of Eco-Friendly Products and CO₂ Emissions in China: A Spatial Spillover Analysis within the EKC Framework</h4>
+            <p class="pub-authors"><strong>Wang Zining</strong>, Pengyu Zhu</p>
+            <p class="pub-journal"><em>Journal of Cleaner Production</em> · 516, 145734</p>
+            <div class="pub-tags"><span>Eco Products</span><span>CO₂</span><span>EKC</span><span>Spatial Spillover</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal" data-category="published">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <h4>Identifying Functional Agglomerations and Urban Centers Using Open-Source Data and Machine Learning: Framework, Applications and Planning Implications</h4>
+            <p class="pub-authors">Zhu Pengyu, Jianqi Li, <strong>Zining Wang</strong></p>
+            <p class="pub-journal"><em>Journal of Urban Management</em> · 14(4), 1099–1114</p>
+            <div class="pub-tags"><span>Machine Learning</span><span>Urban Centers</span><span>Open Data</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal" data-category="published">
+          <span class="pub-year">2024</span>
+          <div class="pub-body">
+            <h4>Does Environmental Regulation Affect Inward Foreign Direct Investment? Evidence from China</h4>
+            <p class="pub-authors"><strong>Wang Zining</strong>, Bing He, Toshiyuki Fujita</p>
+            <p class="pub-journal"><em>Applied Economics Letters</em> · 32(19), 2877–2883</p>
+            <div class="pub-tags"><span>FDI</span><span>Environmental Regulation</span><span>China</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal" data-category="published">
+          <span class="pub-year">2023</span>
+          <div class="pub-body">
+            <h4>The Investment Development Path Theory: Evidence from China</h4>
+            <p class="pub-authors"><strong>Wang Zining</strong>, Hao Wang, Bing He</p>
+            <p class="pub-journal"><em>Asian Journal of Economics and Business</em> · 4(2), 179–191</p>
+            <div class="pub-tags"><span>IDP Theory</span><span>China</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal" data-category="published">
+          <span class="pub-year">2022</span>
+          <div class="pub-body">
+            <h4>Does Trade Openness Influence the Development of Two-way Direct Investment? Evidence from Jiangsu Province, China</h4>
+            <p class="pub-authors"><strong>Wang Zining</strong>, Bing He</p>
+            <p class="pub-journal"><em>Modern Economy Management</em> · 1(1), 6</p>
+            <div class="pub-tags"><span>Trade Openness</span><span>FDI</span><span>Jiangsu</span></div>
+          </div>
+        </div>
+
+        <!-- ---- UNDER REVIEW ---- -->
+        <div class="pub-card reveal under-review" data-category="review">
+          <span class="pub-year status-badge">R&amp;R</span>
+          <div class="pub-body">
+            <h4>Spatiotemporal Relationship Between Green Product Trade and Air Pollution in China</h4>
+            <p class="pub-authors"><strong>Wang Zining</strong>, Pengyu Zhu</p>
+            <p class="pub-journal"><em>Journal of Urban Management</em> · Revise &amp; Resubmit (2nd Round)</p>
+            <div class="pub-tags"><span>Green Trade</span><span>Air Pollution</span><span>Spatiotemporal</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal under-review" data-category="review">
+          <span class="pub-year status-badge">R&amp;R</span>
+          <div class="pub-body">
+            <h4>Discovering the Temporal Evolution of Spatial Spillovers of Green Innovation in China: An Innovative Approach Using Dynamic Spatial-Temporal Weight Matrices</h4>
+            <p class="pub-authors"><strong>Wang Zining</strong>, Pengyu Zhu</p>
+            <p class="pub-journal"><em>Annals of the American Association of Geographers</em> · Revise &amp; Resubmit (2nd Round)</p>
+            <div class="pub-tags"><span>Green Innovation</span><span>Dynamic STW Matrices</span><span>Spatial Spillover</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal under-review" data-category="review">
+          <span class="pub-year status-badge">Submitted</span>
+          <div class="pub-body">
+            <h4>The 15-Minute Green Necklace: How Granular Parks Enhance Land Value</h4>
+            <p class="pub-authors"><strong>Wang Zining</strong>, Pengyu Zhu</p>
+            <p class="pub-journal"><em>Nature Cities</em> · Submitted Feb 2026</p>
+            <div class="pub-tags"><span>15-Min City</span><span>Green Space</span><span>Land Value</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal under-review" data-category="review">
+          <span class="pub-year status-badge">R&amp;R</span>
+          <div class="pub-body">
+            <h4>Public Transit Funding and Transit Use: A Panel Study of U.S. Urbanized Areas 2010–2019</h4>
+            <p class="pub-authors"><strong>Wang Zining</strong>, Zhu Pengyu, Xuan Zhang, Kailai Wang</p>
+            <p class="pub-journal"><em>Transportation Research Part A: Policy and Practice</em> · Revise &amp; Resubmit (3rd Round)</p>
+            <div class="pub-tags"><span>Transit Funding</span><span>US Urban Areas</span><span>Panel Study</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal under-review" data-category="review">
+          <span class="pub-year status-badge">R&amp;R</span>
+          <div class="pub-body">
+            <h4>Evaluating Transport Equity in Racial Minority Neighborhoods: Evidence from New York Taxi Data</h4>
+            <p class="pub-authors">Zhu Pengyu, Yuting Hou, <strong>Zining Wang</strong></p>
+            <p class="pub-journal"><em>Humanities and Social Sciences Communications</em> · Revise &amp; Resubmit (2nd Round)</p>
+            <div class="pub-tags"><span>Transport Equity</span><span>Racial Minority</span><span>NYC</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal under-review" data-category="review">
+          <span class="pub-year status-badge">R&amp;R</span>
+          <div class="pub-body">
+            <h4>Bounded Rationality of State Entrepreneurialism: Governing China's High-Speed Rail New Towns in Economic Transitions</h4>
+            <p class="pub-authors">Yu Tao, Pengyu Zhu, Dehao Shi, <strong>Zining Wang</strong></p>
+            <p class="pub-journal"><em>Urban Studies</em> · Revise &amp; Resubmit (3rd Round)</p>
+            <div class="pub-tags"><span>HSR New Towns</span><span>State Entrepreneurialism</span><span>China</span></div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal under-review" data-category="review">
+          <span class="pub-year status-badge">R&amp;R</span>
+          <div class="pub-body">
+            <h4>Revisiting the Impact of High-Speed Rail on Urban Labour Misallocation: Evidence on Output Substitution Elasticity</h4>
+            <p class="pub-authors">Guo Yanpeng, Fangxin Yi, <strong>Zining Wang</strong>, Yaopei Wang, Pengyu Zhu</p>
+            <p class="pub-journal"><em>Transport Policy</em> · Revise &amp; Resubmit (2nd Round)</p>
+            <div class="pub-tags"><span>HSR</span><span>Labour Misallocation</span><span>Elasticity</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONFERENCES ========== -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Conference Presentations</h2>
+      <div class="conf-grid">
+        <div class="conf-card reveal">
+          <span class="conf-year">2026</span>
+          <div>
+            <h4>"Spatial Panel Regression (SPR): Discovering the Temporal Evolution of Spatial Spillovers"</h4>
+            <p>International Conference · Lesvos Island, Greece</p>
+          </div>
+        </div>
+        <div class="conf-card reveal">
+          <span class="conf-year">2025</span>
+          <div>
+            <h4>"Is Green Product Trade a Pathway to Better Air Quality in China?"</h4>
+            <p>Oxford University · Oxford, United Kingdom</p>
+          </div>
+        </div>
+        <div class="conf-card reveal">
+          <span class="conf-year">2025</span>
+          <div>
+            <h4>"New Spatial-Temporal Weight Matrices"</h4>
+            <p>20th Anniversary Conference of the Japan Association for Applied Economics · Hyogo Prefectural University, Kobe, Japan</p>
+          </div>
+        </div>
+        <div class="conf-card reveal">
+          <span class="conf-year">2024</span>
+          <div>
+            <h4>"The Impact of Environmental Regulation on Green Investment in China"</h4>
+            <p>Japan Association for Applied Economics · Nishinomiya, Hyogo, Japan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Econometrics &amp; Statistics</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">Stata</span>
+            <span class="skill-tag tier-1">R</span>
+            <span class="skill-tag tier-1">GeoDa</span>
+            <span class="skill-tag tier-2">MATLAB</span>
+            <span class="skill-tag tier-2">Spatial Econometrics</span>
+            <span class="skill-tag tier-2">Panel Data</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Programming &amp; ML</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">Python</span>
+            <span class="skill-tag tier-2">Deep Learning</span>
+            <span class="skill-tag tier-2">LLMs</span>
+            <span class="skill-tag tier-2">Machine Learning</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>GIS &amp; Visualization</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">ArcGIS</span>
+            <span class="skill-tag tier-2">3D Visualization</span>
+            <span class="skill-tag tier-2">Spatial Analysis</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Academic Writing</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">LaTeX</span>
+            <span class="skill-tag tier-2">Scientific Writing</span>
+            <span class="skill-tag tier-2">Peer Review</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tier-1">Chinese (Native)</span>
+            <span class="skill-tag tier-1">English (TOEFL 105)</span>
+            <span class="skill-tag tier-2">Japanese (JLPT)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-container">
+      <h2 class="section-title reveal">Get in Touch</h2>
+      <p class="contact-sub reveal">I'm always happy to discuss research collaborations, academic exchanges, or just a good conversation about urban science.</p>
+      <div class="contact-cards reveal">
+        <a href="mailto:zwangpe@connect.ust.hk" class="contact-card">
+          <div class="cc-icon">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <p>zwangpe@connect.ust.hk</p>
+          </div>
+        </a>
+        <div class="contact-card">
+          <div class="cc-icon">📍</div>
+          <div>
+            <strong>Location</strong>
+            <p>Hong Kong, SAR</p>
+          </div>
+        </div>
+        <a href="https://github.com/ZiningPe" class="contact-card" id="github-card" target="_blank">
+          <div class="cc-icon">💻</div>
+          <div>
+            <strong>GitHub</strong>
+            <p>@ZiningPe</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>© 2025 Wang Zining · Built with ❤️ and LaTeX-grade precision</p>
+    <p class="footer-sub">HKUST · Division of Public Policy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

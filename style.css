@@ -130,7 +130,7 @@ ul { list-style: none; }
 }
 .photo-ring {
   position: absolute;
-  width: 210px; height: 210px;
+  width: 250px; height: 250px;
   border-radius: 50%;
   border: 1.5px dashed rgba(0,198,174,.35);
   animation: spin 22s linear infinite;
@@ -138,7 +138,7 @@ ul { list-style: none; }
 /* second decorative arc */
 .photo-ring2 {
   position: absolute;
-  width: 240px; height: 240px;
+  width: 295px; height: 295px;
   border-radius: 50%;
   border: 1px dashed rgba(245,200,66,.25);
   animation: spin 35s linear infinite reverse;
@@ -465,8 +465,8 @@ footer {
 @media (max-width: 900px) {
   .hero-content { flex-direction: column; text-align: center; padding-top: 8rem; gap: 2rem; }
   .hero-photo { width: 145px; height: 145px; }
-  .photo-ring  { width: 180px; height: 180px; }
-  .photo-ring2 { width: 206px; height: 206px; }
+  .photo-ring  { width: 210px; height: 210px; }
+  .photo-ring2 { width: 250px; height: 250px; }
   .hero-links { justify-content: center; }
   .hero-actions { justify-content: center; }
   .hero-badges { justify-content: center; }
